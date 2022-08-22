@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
+@Immutable
 public class TestController {
+    private String test;
 
     @ExceptionHandler
     @ResponseStatus(HttpStatus.BAD_REQUEST)
